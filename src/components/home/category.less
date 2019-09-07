@@ -1,0 +1,102 @@
+.border() {
+
+}
+
+.main{
+    margin: 120px 0;
+}
+
+.subCategory(){
+    opacity: 0;
+    color:white;
+    position: absolute;
+    z-index: 1;
+    top:25%;
+    left:27.5%;
+    transition: all .6s ease-in-out;
+
+    button{
+        color: rgb(5, 5, 5);
+        font-size: 17.5px;
+    }
+
+}
+
+
+
+.subCategoryMen{
+    .subCategory();
+}
+
+.subCategoryWomen{
+    .subCategory();
+}
+
+
+.box(){
+    height:65.5vh;
+    width: 100%;
+    margin: 5px 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.boxMinor(){
+    height:40.5vh;
+    width: 100%;
+    margin: 5px 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.boxMen{
+    .box();
+    &:hover {
+        .subCategoryMen{
+            display: inline;
+            color:white;
+            opacity: 1;
+        }
+    }
+    background-image: url('https://images.unsplash.com/photo-1503993319832-3d3170298339?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80')
+}
+
+.boxWomen{
+    .box();
+    &:hover {
+        .subCategoryWomen{
+            display: inline;
+            color:rgb(126, 126, 126);
+            opacity: 1;
+        }
+    }
+    background-image: url('https://images.unsplash.com/photo-1471602514494-6b059b461fa0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80')
+}
+
+.boxAccessories{
+    .boxMinor();
+    background-image: url('https://images.unsplash.com/photo-1487060567133-77a76299cb19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80')
+}
+
+.boxBags{
+    .boxMinor();
+    background-image: url('https://images.unsplash.com/photo-1523182624816-b827d2fcb47f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80')
+}
+
+.text{
+    position: absolute;
+    z-index: 1;
+    font-size: xx-large;
+    height: 25%;
+    width: 100%;
+    // left: 25px;
+
+    // background-color: rgba(4, 0, 255, 0.24);
+    color: rgb(5, 5, 5);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
